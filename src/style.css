@@ -11,6 +11,10 @@ body {
   height: 90vh;
 }
 
+.hidden {
+  display: none;
+}
+
 .desktop {
   display: block;
 }

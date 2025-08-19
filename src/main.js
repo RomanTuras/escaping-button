@@ -1,3 +1,5 @@
+const game = document.querySelector(".desktop")
+const finish = document.querySelector(".finish")
 const yesBtn = document.getElementById("yes-btn")
 const btn = document.getElementById("no-btn")
 const windowHeight = window.innerHeight;
@@ -5,7 +7,11 @@ const windowWidth = window.innerWidth;
 const btnHeight = 21;
 const btnWidth = 75;
 
-yesBtn.addEventListener("click", () => {alert("Іди вчись!")})
+yesBtn.addEventListener("click", () => {
+  game.classList.add("hidden");
+  game.classList.remove("desktop");
+  finish.classList.remove("hidden");
+})
 
 btn.addEventListener("pointerdown", (event) => {
   if (event.pointerType === "mouse") {
