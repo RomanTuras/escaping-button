@@ -1,0 +1,73 @@
+body {
+  background-image: url(./images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.question {
+  font-size: 40px;
+  padding: 20px;
+  color: #000cff;
+}
+
+.btn {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  /* height: 31px; */
+  /* width: 83px; */
+  padding: 8px 24px;
+  position: absolute;
+  border-radius: 20px;
+  top: 50%;
+  transition: all 200ms ease-out;
+}
+
+.btn:hover {
+  box-shadow: 2.5px 2.5px 5px rgb(60, 60, 60);
+}
+
+.btn-yes {
+  /* background-color: greenyellow; */
+  background-color: rgb(255, 110, 110);
+  left: 32%;
+}
+
+.btn-yes:hover {
+  /* background-color: green; */
+  background-color: rgb(255, 50, 50);
+}
+
+.btn-no {
+  background-color: greenyellow;
+  left: 62%;
+}
+
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+}
