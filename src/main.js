@@ -1,4 +1,4 @@
-const game = document.querySelector(".desktop");
+const game = document.querySelector(".game");
 const finish = document.querySelector(".finish");
 const yesBtn = document.getElementById("yes-btn");
 const btn = document.getElementById("no-btn");
@@ -9,7 +9,7 @@ const btnWidth = 75;
 
 yesBtn.addEventListener("click", () => {
   game.classList.add("hidden");
-  game.classList.remove("desktop");
+  game.classList.remove("game");
   finish.classList.remove("hidden");
 });
 
