@@ -1,5 +1,6 @@
 const game = document.querySelector(".game");
 const finish = document.querySelector(".finish");
+const win = document.querySelector(".win");
 const yesBtn = document.getElementById("yes-btn");
 const btn = document.getElementById("no-btn");
 const windowHeight = window.innerHeight;
@@ -13,14 +14,11 @@ yesBtn.addEventListener("click", () => {
   finish.classList.remove("hidden");
 });
 
-btn.addEventListener("pointerdown", (event) => {
-  if (event.pointerType === "mouse") {
-    onmouseover();
-  }
-  if (event.pointerType === "touch") {
-    onmouseover();
-  }
-});
+btn.addEventListener("click", () => {
+  game.classList.add("hidden");
+  game.classList.remove("game");
+  win.classList.remove("hidden")
+})
 
 btn.addEventListener("mouseover", onmouseover);
 
